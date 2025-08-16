@@ -9,12 +9,7 @@
     color:#243e63;
 }
 
- header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
- }
+ 
  .navbar {
     display: flex;
     gap: 20px;
@@ -119,11 +114,10 @@ HEADER
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-}
-.header__row {
     display: flex;
     justify-content: space-between;
 }
+
 .header__description{
     width: 40%;
     display: flex;
@@ -489,6 +483,11 @@ VALUES
     margin: 16px 0;
     letter-spacing: 0.025em;
 }
+.value__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .values__section--para {
     font-size: 18px;
     font-weight: 500;
@@ -557,6 +556,13 @@ VALUES
     transform: scale(1.05);
 } 
 
+.value:nth-of-type(1) {
+    margin-top: 32px;
+    margin-right: 32px;
+}
+.value:nth-of-type(2) {
+    margin-top: 32px;
+}
     
 
 
@@ -1123,11 +1129,26 @@ MEDIEA QUIERIES
         margin-top: 8px;
         text-align: center;
     }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__description--para {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+    .header__description {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
    
 
 }
 @media (max-width: 768px) {
+     .container
      .start__container--1,
      .values__container,
      .testimonials__container,
@@ -1203,6 +1224,10 @@ MEDIEA QUIERIES
         margin: 32px auto;
         align-items: center;
     }
+    h1{
+        font-size: 32px;
+        text-align: center;
+    }
     .testimonials__section--title,
     .testimonial__title,
     .section__title--quality,
@@ -1215,7 +1240,6 @@ MEDIEA QUIERIES
     .testimonial__rating {
         align-items: center;
     }
-    .header__description--para,
     .section__para,
     .section__para--quality,
     .values__section--para,
@@ -1224,6 +1248,7 @@ MEDIEA QUIERIES
         text-align: center;
         max-width: 600px;
         font-size: 16px;
+        color:#708096
     }
     .testimonial__para,
     .step__para,
